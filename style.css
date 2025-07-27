@@ -60,15 +60,15 @@
     }
     
     .agende {
-        width: 3000px; /* Ajuste conforme necessário para landscape */
-        top: 380%; /* Ajuste conforme necessário */
+        width: 300px; /* Ajuste conforme necessário para landscape */
+        top: 420%; /* Ajuste conforme necessário */
         animation: pulse 1.5s infinite; /* Animação pulsante */
     }
 
     .instagram {
         width: 70px;
-        top: 200%; /* Ajuste conforme necessário */
-        left: 50%; /* Centraliza horizontalmente */        
+        top: 468%; /* Ajuste conforme necessário */        
+        transform: translate(-50%, -50%); /* Centraliza no meio da tela */
     }
 }
 

@@ -60,7 +60,7 @@
     }
     
     .agende {
-        width: 350px; /* Ajuste conforme necessário para landscape */
+        width: 550px; /* Ajuste conforme necessário para landscape */
         top: 420%; /* Ajuste conforme necessário */
         transform: translateY(-50%); /* Centraliza verticalmente */
         animation: pulse 1.5s infinite; /* Animação pulsante */

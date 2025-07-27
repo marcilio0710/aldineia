@@ -16,7 +16,7 @@ main{
 }
 
 /* Modo Portrait */
-@media only screen and (orientation: portrait) {
+@media screen and (orientation: portrait) {
     .png {
         position: relative; /* Para que os filhos com posição absoluta se posicionem em relação a este elemento */
         justify-content: center; /* Centraliza as imagens horizontalmente */
@@ -45,7 +45,7 @@ main{
 }
 
 /* Modo Landscape */
-@media only screen and (orientation: landscape) {
+@media screen and (orientation: landscape) {
     .overlay {
         position: absolute;
         width: 100px; /* Ajuste conforme necessário para landscape */

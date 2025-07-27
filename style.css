@@ -5,10 +5,11 @@
     margin: 0;
     padding: 0;
 }
-
+main{
+    display: flex;
+    flex-direction: column;
+}
 .png {
-    display: flex; /* Usar flexbox para posicionar imagens lado a lado */
-    flex-wrap: wrap; /* Permitir que as imagens se ajustem em várias linhas, se necessário */
     position: relative; /* Para que os filhos com posição absoluta se posicionem em relação a este elemento */
     justify-content: center; /* Centraliza as imagens horizontalmente */
     align-items: center; /* Centraliza as imagens verticalmente */

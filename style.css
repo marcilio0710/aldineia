@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 /* Estilos globais e reset */
 * {
     margin: 0;
@@ -8,29 +7,27 @@
 }
 
 /* Garante que HTML e BODY ocupem 100% da largura e altura do viewport */
-/* e esconde qualquer conteúdo que tente "vazar" horizontalmente */
 html {
-    margin: 0; /* Remove explicitamente a margem padrão do html */
-    padding: 0; /* Remove explicitamente o padding padrão do html */
     width: 100%;
     height: 100%; /* Garante que o html ocupe a altura total do viewport */
     overflow-x: hidden; /* CRÍTICO: Esconde qualquer barra de rolagem horizontal e conteúdo que transborde */
-    box-sizing: border-box; /* Garante que o box-sizing se aplique ao html */
 }
 
 body {
-    display: none; /* Esconde o corpo da página por padrão (para desktops) */
-    margin: 0; /* Remove explicitamente a margem padrão do body */
-    padding: 0; /* Remove explicitamente o padding padrão do body */
+    /* Por padrão, o corpo será flexível e centralizado, adequado para mobile-first */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
     width: 100%; /* Garante que o body ocupe 100% da largura do html */
     min-height: 100vh; /* Garante que o body tenha pelo menos a altura da viewport */
-    /* overflow-x: hidden; já está no html, não precisa repetir aqui, mas não faria mal */
+    /* overflow-x: hidden; já está no html, não precisa repetir aqui */
 }
 
 /* Estilo para todas as imagens para garantir que ocupem 100% da largura do seu contêiner */
-body img {
-    width: 100%;
-    height: auto;
+/* e mantenham sua proporção */
+img {
+    max-width: 100%; /* Garante que a imagem nunca ultrapasse a largura do pai */
+    height: auto; /* Mantém a proporção da imagem */
     display: block; /* Garante que as imagens se comportem como blocos e não tenham espaço extra */
     vertical-align: top; /* Ajuda a remover pequenas lacunas abaixo de imagens */
 }
@@ -39,14 +36,22 @@ body img {
 .pagina_final {
     position: relative; /* CRÍTICO: Define este div como o ponto de referência para os elementos com position: absolute */
     width: 100%; /* Garante que o div ocupe a largura total */
-    height: auto; /* Ajusta a altura automaticamente com a imagem */
+    height: auto; /* Ajusta a altura automaticamente com a imagem 3.png */
+    /* Opcional: Defina uma largura máxima para o design não ficar muito esticado em telas grandes */
+    /* max-width: 600px; */
+}
+
+/* Garante que a imagem 3.png dentro de .pagina_final também se ajuste */
+.pagina_final > img {
+    width: 100%;
+    height: auto;
 }
 
 /* Estilos base para os overlays (botões) */
 .overlay {
     position: absolute; /* Posiciona os botões relativamente ao .pagina_final */
-    height: auto;
-    /* A largura será definida dentro das media queries para cada orientação */
+    height: auto; /* Mantém a proporção da imagem do botão */
+    /* A largura, top e left serão definidos dentro das media queries usando porcentagens */
 }
 
 /* Definindo a animação pulsante */
@@ -62,47 +67,58 @@ body img {
     }
 }
 
-/* Media Query para dispositivos móveis em modo RETRATO */
-@media screen and (max-width: 999px) and (orientation: portrait) {
+/* Media Query para dispositivos móveis em modo RETRATO (smartphones e tablets pequenos) */
+@media screen and (max-width: 768px) and (orientation: portrait) {
     body {
-        display: flex; /* Mostra o corpo da página */
-        flex-direction: column;
+        display: flex; /* Garante que o corpo seja visível e flexível */
     }
 
-    /* Posição para os botões sobrepostos no modo retrato */
+    /* Posição e tamanho para o botão "Agende" no modo retrato */
     .agende {
-        width: 248px; /* Largura do botão "Agende" */
-        left: 20%; /* Centraliza horizontalmente */
-        top: 247%; /* Posição vertical na imagem final */
+        width: 65%; /* Use porcentagem para largura, ajuste conforme necessário */
+        top: 70%; /* Posição vertical na imagem final (ajuste este valor!) */
+        left: 50%; /* Centraliza horizontalmente */
         transform: translateX(-50%); /* Ajuste para centralizar perfeitamente */
         animation: pulse 1.5s infinite;
     }
+
+    /* Posição e tamanho para o botão "Instagram" no modo retrato */
     .instagram {
-        width: 60px; /* Largura do botão "Instagram" */
-        top: 267%; /* Posição vertical na imagem final */
-        left: 43%; /* Posição horizontal */
+        width: 18%; /* Use porcentagem para largura, ajuste conforme necessário */
+        top: 85%; /* Posição vertical na imagem final (ajuste este valor!) */
+        left: 50%; /* Centraliza horizontalmente */
+        transform: translateX(-50%); /* Ajuste para centralizar perfeitamente */
     }
 }
 
-/* Media Query para dispositivos móveis em modo PAISAGEM */
-@media screen and (max-width: 900px) and (orientation: landscape) {
+/* Media Query para dispositivos móveis em modo PAISAGEM (smartphones e tablets pequenos) */
+@media screen and (max-width: 992px) and (orientation: landscape) {
     body {
-        display: block; /* Mostra o corpo da página */
+        display: flex; /* Garante que o corpo seja visível e flexível */
     }
 
     /* Ajustes para o botão "Agende" no modo PAISAGEM */
     .agende {
-        width: 280px; /* Ajuste a largura para o modo paisagem */
+        width: 45%; /* Ajuste a largura para o modo paisagem, ainda em porcentagem */
+        top: 75%; /* Posição vertical na imagem final (ajuste este valor!) */
         left: 50%; /* Centraliza horizontalmente */
-        top: 980%; /* Posição vertical na imagem final (ajuste mais para cima) */
         transform: translateX(-50%);
         animation: pulse 1.5s infinite;
     }
 
     /* Ajustes para o ícone "Instagram" no modo PAISAGEM */
     .instagram {
-        width: 80px; /* Ajuste a largura para o modo paisagem */
-        top: 1030%; /* Posição vertical na imagem final (ajuste) */
-        left: 85%; /* Posição horizontal (ajuste) */
+        width: 12%; /* Ajuste a largura para o modo paisagem, ainda em porcentagem */
+        top: 90%; /* Posição vertical na imagem final (ajuste este valor!) */
+        left: 50%; /* Centraliza horizontalmente */
+        transform: translateX(-50%);
+    }
+}
+
+/* Media Query para telas maiores (desktops e tablets grandes) */
+/* Se a intenção é que a página seja apenas para mobile, você pode escondê-la aqui */
+@media screen and (min-width: 993px) {
+    body {
+        display: none; /* Esconde o conteúdo em telas maiores */
     }
 }

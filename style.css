@@ -20,7 +20,7 @@
 /* Posição para as imagens sobrepostas */
 .agende {
     width: 350px;
-    left: 37%;
+    left: 40%;
     top: 88%; /* Ajuste conforme necessário */
     transform: translateX(-50%); /* Centralizar baseado no meio da imagem */
     animation: pulse 1.5s infinite; /* Adiciona animação pulsante */

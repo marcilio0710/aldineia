@@ -76,8 +76,8 @@ img {
     /* Posição e tamanho para o botão "Agende" no modo retrato */
     .agende {
         width: 65%; /* Use porcentagem para largura, ajuste conforme necessário */
-        top: 55%; /* Posição vertical na imagem final (ajuste este valor!) */
-        left: 50%; /* Centraliza horizontalmente */
+        top: 60%; /* Posição vertical na imagem final (ajuste este valor!) */
+        left: 40%; /* Centraliza horizontalmente */
         transform: translateX(-50%); /* Ajuste para centralizar perfeitamente */
         animation: pulse 1.5s infinite;
     }

@@ -17,6 +17,12 @@ main{
 
 /* Modo Portrait */
 @media only screen and (orientation: portrait) {
+    .png {
+        position: relative; /* Para que os filhos com posição absoluta se posicionem em relação a este elemento */
+        justify-content: center; /* Centraliza as imagens horizontalmente */
+        align-items: center; /* Centraliza as imagens verticalmente */
+        width: 100%;
+}
     .overlay {
         position: absolute;
         width: 80px; /* Ajuste conforme necessário para portrait */
@@ -27,7 +33,7 @@ main{
         width: 300px; /* Ajuste conforme necessário para portrait */
         left: 29%; /* Centralizar horizontalmente */
         top: 88%; /* Ajuste conforme necessário */
-        transform: translateX(-50%); /* Centralizar baseado no meio da imagem */
+        
         animation: pulse 1.5s infinite; /* Animação pulsante */
     }
 

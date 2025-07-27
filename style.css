@@ -73,13 +73,13 @@ body img {
     .agende {
         width: 250px; /* Largura do botão "Agende" */
         left: 20%; /* Centraliza horizontalmente */
-        top: 230%; /* Posição vertical na imagem final */
+        top: 235%; /* Posição vertical na imagem final */
         transform: translateX(-50%); /* Ajuste para centralizar perfeitamente */
         animation: pulse 1.5s infinite;
     }
     .instagram {
         width: 60px; /* Largura do botão "Instagram" */
-        top: 180%; /* Posição vertical na imagem final */
+        top: 220%; /* Posição vertical na imagem final */
         left: 43%; /* Posição horizontal */
     }
 }
@@ -94,7 +94,7 @@ body img {
     .agende {
         width: 280px; /* Ajuste a largura para o modo paisagem */
         left: 50%; /* Centraliza horizontalmente */
-        top: 150%; /* Posição vertical na imagem final (ajuste mais para cima) */
+        top: 450%; /* Posição vertical na imagem final (ajuste mais para cima) */
         transform: translateX(-50%);
         animation: pulse 1.5s infinite;
     }
@@ -102,7 +102,7 @@ body img {
     /* Ajustes para o ícone "Instagram" no modo PAISAGEM */
     .instagram {
         width: 80px; /* Ajuste a largura para o modo paisagem */
-        top: 185%; /* Posição vertical na imagem final (ajuste) */
+        top: 485%; /* Posição vertical na imagem final (ajuste) */
         left: 85%; /* Posição horizontal (ajuste) */
     }
 }

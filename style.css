@@ -20,7 +20,7 @@
 /* Posição para as imagens sobrepostas */
 .agende {
     width: 350px;
-    left: 34%;
+    left: 37%;
     top: 88%; /* Ajuste conforme necessário */
     transform: translateX(-50%); /* Centralizar baseado no meio da imagem */
     animation: pulse 1.5s infinite; /* Adiciona animação pulsante */
@@ -41,6 +41,6 @@
 
 .instagram {
  top:96%; /* Ajuste conforme necessário */
- left: 70%;
+ left: 80%;
  transform: translateX(-50%);
 }

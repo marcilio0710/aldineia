@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
-*{
+/* Estilos gerais */
+* {
     margin: 0;
     padding: 0;
 }
@@ -9,23 +10,56 @@
     display: flex; /* Usar flexbox para posicionar imagens lado a lado */
     flex-wrap: wrap; /* Permitir que as imagens se ajustem em várias linhas, se necessário */
     position: relative; /* Para que os filhos com posição absoluta se posicionem em relação a este elemento */
+    justify-content: center; /* Centraliza as imagens horizontalmente */
+    align-items: center; /* Centraliza as imagens verticalmente */
 }
 
-.overlay {
- position: absolute;
- width: 100px; /* Ajuste conforme necessário */
- height: auto;
+/* Modo Portrait */
+@media only screen and (orientation: portrait) {
+    .overlay {
+        position: absolute;
+        width: 80px; /* Ajuste conforme necessário para portrait */
+        height: auto;
+    }
+    
+    .agende {
+        width: 300px; /* Ajuste conforme necessário para portrait */
+        left: 29%; /* Centralizar horizontalmente */
+        top: 88%; /* Ajuste conforme necessário */
+        transform: translateX(-50%); /* Centralizar baseado no meio da imagem */
+        animation: pulse 1.5s infinite; /* Animação pulsante */
+    }
+
+    .instagram {
+        top: 96.5%; /* Ajuste conforme necessário */
+        left: 50%; /* Ajuste conforme necessário */
+        transform: translateX(-50%);
+    }
 }
 
-/* Posição para as imagens sobrepostas */
-.agende {
-    width: 350px;
-    left: 39%;
-    top: 88%; /* Ajuste conforme necessário */
-    transform: translateX(-50%); /* Centralizar baseado no meio da imagem */
-    animation: pulse 1.5s infinite; /* Adiciona animação pulsante */
+/* Modo Landscape */
+@media only screen and (orientation: landscape) {
+    .overlay {
+        position: absolute;
+        width: 100px; /* Ajuste conforme necessário para landscape */
+        height: auto;
+    }
+    
+    .agende {
+        width: 350px; /* Ajuste conforme necessário para landscape */
+        left: 34%; /* Ajuste conforme necessário */
+        top: 88%; /* Ajuste conforme necessário */
+        transform: translateX(-50%); /* Centralizar baseado no meio da imagem */
+        animation: pulse 1.5s infinite; /* Animação pulsante */
+    }
 
+    .instagram {
+        top: 96%; /* Ajuste conforme necessário */
+        left: 50%; /* Ajuste conforme necessário */
+        transform: translateX(-50%);
+    }
 }
+
 /* Definindo a animação pulsante */
 @keyframes pulse {
     0% {
@@ -37,10 +71,4 @@
     100% {
         transform: scale(1);
     }
-}
-
-.instagram {
- top:96%; /* Ajuste conforme necessário */
- left: 80%;
- transform: translateX(-50%);
 }

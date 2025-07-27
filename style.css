@@ -19,7 +19,7 @@
 
 /* Posição para as imagens sobrepostas */
 .agende {
-    width: 350px;
+    width: 450px;
     left: 39%;
     top: 88%; /* Ajuste conforme necessário */
     transform: translateX(-50%); /* Centralizar baseado no meio da imagem */
@@ -40,7 +40,7 @@
 }
 
 .instagram {
- top:96%; /* Ajuste conforme necessário */
+ top:150%; /* Ajuste conforme necessário */
  left: 80%;
  transform: translateX(-50%);
 }

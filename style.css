@@ -27,8 +27,8 @@
 
 }
 .instagram {
-    top:95%; /* Ajuste conforme necessário */
-    left: 80%;
+    top:100%; /* Ajuste conforme necessário */
+    left: 75%;
 }
 /* Definindo a animação pulsante */
 @keyframes pulse {
@@ -66,7 +66,7 @@
 
     .instagram {
         width: 70px;
-        top: 510%; /* Ajuste conforme necessário */  
+        top: 750%; /* Ajuste conforme necessário */  
         left: 45%;
         
     }

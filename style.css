@@ -44,3 +44,44 @@
  left: 80%;
  transform: translateX(-50%);
 }
+
+/* Modo Landscape */
+@media only screen and (orientation: landscape) {
+    .png {
+        justify-content: center; /* Centraliza as imagens horizontalmente */
+        align-items: center; /* Centraliza as imagens verticalmente */
+        height: 100vh; /* Define a altura para ocupar toda a tela */
+    }
+
+    .overlay {
+        position: absolute;
+        width: 100px; /* Ajuste conforme necessário para landscape */
+        height: auto;
+    }
+    
+    .agende {
+        width: 350px; /* Ajuste conforme necessário para landscape */
+        top: 420%; /* Ajuste conforme necessário */
+        transform: translateY(-50%); /* Centraliza verticalmente */
+        animation: pulse 1.5s infinite; /* Animação pulsante */
+    }
+
+    .instagram {
+        top: 468%; /* Ajuste conforme necessário */
+        left: 50%; /* Centraliza horizontalmente */
+        transform: translate(-50%, -50%); /* Centraliza no meio da tela */
+    }
+}
+
+/* Definindo a animação pulsante */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1); /* Aumenta 10% */
+    }
+    100% {
+        transform: scale(1);
+    }
+}

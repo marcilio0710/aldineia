@@ -19,12 +19,17 @@
 
 /* Posição para as imagens sobrepostas */
 .agende {
-    width: 450px;
+    width: 350px;
     left: 39%;
     top: 88%; /* Ajuste conforme necessário */
     transform: translateX(-50%); /* Centralizar baseado no meio da imagem */
     animation: pulse 1.5s infinite; /* Adiciona animação pulsante */
 
+}
+.instagram {
+    top:96%; /* Ajuste conforme necessário */
+    left: 80%;
+    transform: translateX(-50%);
 }
 /* Definindo a animação pulsante */
 @keyframes pulse {
@@ -61,13 +66,13 @@
     
     .agende {
         width: 300px; /* Ajuste conforme necessário para landscape */
-        top: 620%; /* Ajuste conforme necessário */
+        top: 700%; /* Ajuste conforme necessário */
         animation: pulse 1.5s infinite; /* Animação pulsante */
     }
 
     .instagram {
         width: 70px;
-        top: 668%; /* Ajuste conforme necessário */        
+        top: 768%; /* Ajuste conforme necessário */        
         transform: translate(-50%, -50%); /* Centraliza no meio da tela */
     }
 }

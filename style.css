@@ -73,13 +73,13 @@ body img {
     .agende {
         width: 250px; /* Largura do botão "Agende" */
         left: 20%; /* Centraliza horizontalmente */
-        top: 250%; /* Posição vertical na imagem final */
+        top: 230%; /* Posição vertical na imagem final */
         transform: translateX(-50%); /* Ajuste para centralizar perfeitamente */
         animation: pulse 1.5s infinite;
     }
     .instagram {
         width: 60px; /* Largura do botão "Instagram" */
-        top: 130%; /* Posição vertical na imagem final */
+        top: 180%; /* Posição vertical na imagem final */
         left: 43%; /* Posição horizontal */
     }
 }

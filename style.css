@@ -63,7 +63,7 @@ body img {
 }
 
 /* Media Query para dispositivos móveis em modo RETRATO */
-@media screen and (max-width: 900px) and (orientation: portrait) {
+@media screen and (max-width: 999px) and (orientation: portrait) {
     body {
         display: flex; /* Mostra o corpo da página */
         flex-direction: column;

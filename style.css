@@ -1,47 +1,110 @@
 @charset "UTF-8";
 
-*{
+/* Estilos globais e reset */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box; /* Inclui padding e border nas larguras */
 }
 
-.png {
-    display: flex; /* Usar flexbox para posicionar imagens lado a lado */
-    flex-wrap: wrap; /* Permitir que as imagens se ajustem em várias linhas, se necessário */
-    position: relative; /* Para que os filhos com posição absoluta se posicionem em relação a este elemento */
+/* Esconde o corpo da página por padrão.
+   Isso garante que a página não seja exibida em desktops
+   ou em dispositivos que não se encaixem nas media queries abaixo. */
+body {
+    display: none;
 }
 
-.overlay {
- position: absolute;
- width: 100px; /* Ajuste conforme necessário */
- height: auto;
-}
-
-/* Posição para as imagens sobrepostas */
-.agende {
-    width: 350px;
-    left: 39%;
-    top: 88%; /* Ajuste conforme necessário */
-    transform: translateX(-50%); /* Centralizar baseado no meio da imagem */
-    animation: pulse 1.5s infinite; /* Adiciona animação pulsante */
-
-}
-.instagram {
-    top:96.5%; /* Ajuste conforme necessário */
-    left: 70%;
-}
-/* Definindo a animação pulsante */
-@keyframes pulse {
-    0% {
-        transform: scale(1);
+/* Media Query para dispositivos móveis em modo RETRATO */
+/* A página será visível em telas de até 900px de largura e na orientação retrato. */
+@media screen and (max-width: 900px) and (orientation: portrait) {
+    /* Mostra o corpo da página apenas em dispositivos móveis em retrato */
+    body {
+        display: block;
     }
-    50% {
-        transform: scale(1.1); /* Aumenta 10% */
+
+    .png {
+        display: flex; /* Usar flexbox para posicionar imagens lado a lado */
+        flex-wrap: wrap; /* Permitir que as imagens se ajustem em várias linhas, se necessário */
+        position: relative; /* Para que os filhos com posição absoluta se posicionem em relação a este elemento */
     }
-    100% {
-        transform: scale(1);
+    .overlay {
+        position: absolute;
+        width: 100px; /* Ajuste conforme necessário */
+        height: auto;
+    }
+    /* Posição para as imagens sobrepostas no modo retrato */
+    .agende {
+        width: 350px;
+        left: 39%;
+        top: 88%; /* Ajuste conforme necessário */
+        transform: translateX(-50%); /* Centralizar baseado no meio da imagem */
+        animation: pulse 1.5s infinite; /* Adiciona animação pulsante */
+    }
+    .instagram {
+        top: 96.5%; /* Ajuste conforme necessário */
+        left: 70%;
+    }
+    /* Definindo a animação pulsante */
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1); /* Aumenta 10% */
+        }
+        100% {
+            transform: scale(1);
+        }
     }
 }
 
+/* Media Query para dispositivos móveis em modo PAISAGEM */
+/* A página será visível em telas de até 900px de largura e na orientação paisagem. */
+@media screen and (max-width: 900px) and (orientation: landscape) {
+    /* Mostra o corpo da página apenas em dispositivos móveis em paisagem */
+    body {
+        display: block;
+    }
 
+    /* Marcilio, aqui você vai ajustar os estilos específicos para o modo paisagem */
+    /* Lembre-se que a tela é mais larga e menos alta neste modo. */
+    /* As posições (top, left) e tamanhos (width) dos elementos podem precisar de ajustes significativos. */
+
+    .png {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        /* Pode ser necessário ajustar o tamanho da imagem de fundo ou do contêiner principal */
+    }
+    .overlay {
+        position: absolute;
+        /* Exemplo: Ajuste a largura para se adequar melhor à tela paisagem */
+        width: 120px;
+        height: auto;
+    }
+    .agende {
+        /* Exemplo: Ajuste o tamanho e a posição para o modo paisagem */
+        width: 280px; /* Pode ser um pouco menor ou maior dependendo do design */
+        left: 50%; /* Centralizar horizontalmente */
+        top: 70%; /* Ajuste vertical, pode ser mais alto para não ficar muito no rodapé */
+        transform: translateX(-50%);
+        animation: pulse 1.5s infinite; /* Mantém a animação */
+    }
+    .instagram {
+        /* Exemplo: Ajuste a posição para o modo paisagem */
+        top: 85%; /* Ajuste vertical */
+        left: 85%; /* Ajuste horizontal */
+    }
+    /* A animação @keyframes pulse pode ser a mesma, a menos que você queira um efeito diferente */
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+}

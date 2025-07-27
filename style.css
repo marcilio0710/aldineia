@@ -94,7 +94,7 @@ body img {
     .agende {
         width: 280px; /* Ajuste a largura para o modo paisagem */
         left: 50%; /* Centraliza horizontalmente */
-        top: 70%; /* Posição vertical na imagem final (ajuste mais para cima) */
+        top: 150%; /* Posição vertical na imagem final (ajuste mais para cima) */
         transform: translateX(-50%);
         animation: pulse 1.5s infinite;
     }
@@ -102,7 +102,7 @@ body img {
     /* Ajustes para o ícone "Instagram" no modo PAISAGEM */
     .instagram {
         width: 80px; /* Ajuste a largura para o modo paisagem */
-        top: 85%; /* Posição vertical na imagem final (ajuste) */
+        top: 185%; /* Posição vertical na imagem final (ajuste) */
         left: 85%; /* Posição horizontal (ajuste) */
     }
 }

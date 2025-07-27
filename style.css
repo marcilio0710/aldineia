@@ -27,7 +27,7 @@
 
 }
 .instagram {
-    top:97%; /* Ajuste conforme necessário */
+    top:96.5%; /* Ajuste conforme necessário */
     left: 70%;
 }
 /* Definindo a animação pulsante */
@@ -58,7 +58,7 @@
     }
     
     .agende {
-        left: 30%;
+        left: 31%;
         width: 300px; /* Ajuste conforme necessário para landscape */
         top: 673%; /* Ajuste conforme necessário */
         animation: pulse 1.5s infinite; /* Animação pulsante */

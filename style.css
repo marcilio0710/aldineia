@@ -58,6 +58,7 @@
     }
     
     .agende {
+        left: 39%;
         width: 300px; /* Ajuste conforme necessário para landscape */
         top: 675%; /* Ajuste conforme necessário */
         animation: pulse 1.5s infinite; /* Animação pulsante */
@@ -65,7 +66,8 @@
 
     .instagram {
         width: 70px;
-        top: 690%; /* Ajuste conforme necessário */    
+        top: 690%; /* Ajuste conforme necessário */  
+        left: 39%;
         
     }
 }

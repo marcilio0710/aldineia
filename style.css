@@ -61,13 +61,13 @@
     
     .agende {
         width: 550px; /* Ajuste conforme necessário para landscape */
-        top: 720%; /* Ajuste conforme necessário */
+        top: 680%; /* Ajuste conforme necessário */
         transform: translateY(-50%); /* Centraliza verticalmente */
         animation: pulse 1.5s infinite; /* Animação pulsante */
     }
 
     .instagram {
-        top: 868%; /* Ajuste conforme necessário */
+        top: 700%; /* Ajuste conforme necessário */
         left: 50%; /* Centraliza horizontalmente */
         transform: translate(-50%, -50%); /* Centraliza no meio da tela */
     }

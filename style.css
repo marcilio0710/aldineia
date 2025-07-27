@@ -47,37 +47,46 @@
 /* Modo Landscape */
 @media only screen and (orientation: landscape) {
       body {
-        overflow: hidden; /* Evita a rolagem horizontal e vertical */
+        overflow-x: hidden; /* Evita a rolagem horizontal e vertical */
     }
-    .png {
-        justify-content: center; /* Centraliza as imagens horizontalmente */
-        align-items: center; /* Centraliza as imagens verticalmente */
-        height: 100vh; /* Define a altura para ocupar toda a tela */
-        flex-direction: column; /* Coloca as imagens em coluna */
-        align-items: center; /* Centraliza as imagens verticalmente */
-        padding: 10px; /* Adiciona espaço em volta do conteúdo */
-        width: 100%; /* Garante que o contêiner use 100% da largura */
+    main{
+        justify-content: center;
+    }
+.png {
+    display: flex; /* Usar flexbox para posicionar imagens lado a lado */
+    flex-wrap: wrap; /* Permitir que as imagens se ajustem em várias linhas, se necessário */
+    position: relative; /* Para que os filhos com posição absoluta se posicionem em relação a este elemento */
+}    
+    .icon1{
+        position:absolute;
+        justify-content: center;
+        align-items: center;
+        margin-top: -350px;
+        left: 432px;       
     }
 
+    .icon1 img{
+        width: 250px;
+    }
+
+    .icon2{
+        position:absolute;
+        justify-content: center;
+        align-items: center;
+        margin-top: -130px;
+        left: 520px;       
+    }
+
+    .icon2 img{
+        width: 60px;
+    }
     .overlay {
         position: absolute;
         width: 100px; /* Ajuste conforme necessário para landscape */
         height: auto;
     }
     
-    .agende {
-        left: 32%;
-        width: 300px; /* Ajuste conforme necessário para landscape */
-        top: 673%; /* Ajuste conforme necessário */
-        animation: pulse 1.5s infinite; /* Animação pulsante */
-    }
 
-    .instagram {
-        width: 70px;
-        top: 735%; /* Ajuste conforme necessário */  
-        left: 45%;
-        
-    }
 }
 
 /* Definindo a animação pulsante */

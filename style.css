@@ -79,7 +79,7 @@ body img {
     }
     .instagram {
         width: 60px; /* Largura do botão "Instagram" */
-        top: 88%; /* Posição vertical na imagem final */
+        top: 130%; /* Posição vertical na imagem final */
         left: 43%; /* Posição horizontal */
     }
 }

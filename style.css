@@ -27,9 +27,8 @@
 
 }
 .instagram {
-    top:96%; /* Ajuste conforme necessário */
+    top:50%; /* Ajuste conforme necessário */
     left: 80%;
-    transform: translateX(-50%);
 }
 /* Definindo a animação pulsante */
 @keyframes pulse {

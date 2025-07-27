@@ -27,7 +27,7 @@
 
 }
 .instagram {
-    top:97%; /* Ajuste conforme necessário */
+    top:95%; /* Ajuste conforme necessário */
     left: 70%;
 }
 /* Definindo a animação pulsante */
@@ -67,7 +67,7 @@
     .instagram {
         width: 70px;
         top: 735%; /* Ajuste conforme necessário */  
-        left: 45%;
+        left: 42%;
         
     }
 }

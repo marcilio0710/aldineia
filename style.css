@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Inclui padding e border nas larguras */
 }
 
 .png {
@@ -45,10 +46,17 @@
 
 /* Modo Landscape */
 @media only screen and (orientation: landscape) {
+      body {
+        overflow: hidden; /* Evita a rolagem horizontal e vertical */
+    }
     .png {
         justify-content: center; /* Centraliza as imagens horizontalmente */
         align-items: center; /* Centraliza as imagens verticalmente */
         height: 100vh; /* Define a altura para ocupar toda a tela */
+        flex-direction: column; /* Coloca as imagens em coluna */
+        align-items: center; /* Centraliza as imagens verticalmente */
+        padding: 10px; /* Adiciona espaço em volta do conteúdo */
+        width: 100%; /* Garante que o contêiner use 100% da largura */
     }
 
     .overlay {

@@ -85,7 +85,7 @@ img {
     /* Posição e tamanho para o botão "Instagram" no modo retrato */
     .instagram {
         width: 18%; /* Use porcentagem para largura, ajuste conforme necessário */
-        top: 85%; /* Posição vertical na imagem final (ajuste este valor!) */
+        top: 90%; /* Posição vertical na imagem final (ajuste este valor!) */
         left: 50%; /* Centraliza horizontalmente */
         transform: translateX(-50%); /* Ajuste para centralizar perfeitamente */
     }

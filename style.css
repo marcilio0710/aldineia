@@ -7,11 +7,24 @@
     box-sizing: border-box; /* Inclui padding e border nas larguras */
 }
 
-/* Esconde o corpo da página por padrão para não ser exibido em desktops */
-body {
-    display: none;
+/* Garante que HTML e BODY ocupem 100% da largura e altura do viewport */
+/* e esconde qualquer conteúdo que tente "vazar" horizontalmente */
+html {
+    margin: 0; /* Remove explicitamente a margem padrão do html */
+    padding: 0; /* Remove explicitamente o padding padrão do html */
     width: 100%;
-    overflow-x: hidden; /* Evita rolagem horizontal indesejada */
+    height: 100%; /* Garante que o html ocupe a altura total do viewport */
+    overflow-x: hidden; /* CRÍTICO: Esconde qualquer barra de rolagem horizontal e conteúdo que transborde */
+    box-sizing: border-box; /* Garante que o box-sizing se aplique ao html */
+}
+
+body {
+    display: none; /* Esconde o corpo da página por padrão (para desktops) */
+    margin: 0; /* Remove explicitamente a margem padrão do body */
+    padding: 0; /* Remove explicitamente o padding padrão do body */
+    width: 100%; /* Garante que o body ocupe 100% da largura do html */
+    min-height: 100vh; /* Garante que o body tenha pelo menos a altura da viewport */
+    /* overflow-x: hidden; já está no html, não precisa repetir aqui, mas não faria mal */
 }
 
 /* Estilo para todas as imagens para garantir que ocupem 100% da largura do seu contêiner */
@@ -19,6 +32,7 @@ body img {
     width: 100%;
     height: auto;
     display: block; /* Garante que as imagens se comportem como blocos e não tenham espaço extra */
+    vertical-align: top; /* Ajuda a remover pequenas lacunas abaixo de imagens */
 }
 
 /* O contêiner da última página, onde os botões serão posicionados */
@@ -51,21 +65,22 @@ body img {
 /* Media Query para dispositivos móveis em modo RETRATO */
 @media screen and (max-width: 900px) and (orientation: portrait) {
     body {
-        display: block; /* Mostra o corpo da página */
+        display: flex; /* Mostra o corpo da página */
+        flex-direction: column;
     }
 
     /* Posição para os botões sobrepostos no modo retrato */
     .agende {
-        width: 350px; /* Largura do botão "Agende" */
-        left: 50%; /* Centraliza horizontalmente */
-        top: 88%; /* Posição vertical na imagem final */
+        width: 250px; /* Largura do botão "Agende" */
+        left: 20%; /* Centraliza horizontalmente */
+        top: 63%; /* Posição vertical na imagem final */
         transform: translateX(-50%); /* Ajuste para centralizar perfeitamente */
         animation: pulse 1.5s infinite;
     }
     .instagram {
-        width: 100px; /* Largura do botão "Instagram" */
-        top: 96.5%; /* Posição vertical na imagem final */
-        left: 70%; /* Posição horizontal */
+        width: 60px; /* Largura do botão "Instagram" */
+        top: 88%; /* Posição vertical na imagem final */
+        left: 43%; /* Posição horizontal */
     }
 }
 
@@ -78,8 +93,8 @@ body img {
     /* Ajustes para o botão "Agende" no modo PAISAGEM */
     .agende {
         width: 280px; /* Ajuste a largura para o modo paisagem */
-        left: 33%; /* Centraliza horizontalmente */
-        top: 66%; /* Posição vertical na imagem final (ajuste mais para cima) */
+        left: 50%; /* Centraliza horizontalmente */
+        top: 70%; /* Posição vertical na imagem final (ajuste mais para cima) */
         transform: translateX(-50%);
         animation: pulse 1.5s infinite;
     }
@@ -87,7 +102,7 @@ body img {
     /* Ajustes para o ícone "Instagram" no modo PAISAGEM */
     .instagram {
         width: 80px; /* Ajuste a largura para o modo paisagem */
-        top: 90%; /* Posição vertical na imagem final (ajuste) */
-        left: 45%; /* Posição horizontal (ajuste) */
+        top: 85%; /* Posição vertical na imagem final (ajuste) */
+        left: 85%; /* Posição horizontal (ajuste) */
     }
 }

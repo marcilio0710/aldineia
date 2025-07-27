@@ -71,7 +71,7 @@ body img {
 
     /* Posição para os botões sobrepostos no modo retrato */
     .agende {
-        width: 250px; /* Largura do botão "Agende" */
+        width: 248px; /* Largura do botão "Agende" */
         left: 20%; /* Centraliza horizontalmente */
         top: 245%; /* Posição vertical na imagem final */
         transform: translateX(-50%); /* Ajuste para centralizar perfeitamente */

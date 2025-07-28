@@ -86,7 +86,7 @@ img {
     .instagram {
         width: 18%; /* Use porcentagem para largura, ajuste conforme necessário */
         top: 88%; /* Posição vertical na imagem final (ajuste este valor!) */
-        left: 40%; /* Centraliza horizontalmente */
+        left: 44%; /* Centraliza horizontalmente */
         transform: translateX(-50%); /* Ajuste para centralizar perfeitamente */
     }
 }

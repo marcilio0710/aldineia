@@ -75,9 +75,9 @@ img {
 
     /* Posição e tamanho para o botão "Agende" no modo retrato */
     .agende {
-        width: 65%; /* Use porcentagem para largura, ajuste conforme necessário */
+        width: 60%; /* Use porcentagem para largura, ajuste conforme necessário */
         top: 60%; /* Posição vertical na imagem final (ajuste este valor!) */
-        left: 40%; /* Centraliza horizontalmente */
+        left: 30%; /* Centraliza horizontalmente */
         transform: translateX(-50%); /* Ajuste para centralizar perfeitamente */
         animation: pulse 1.5s infinite;
     }
@@ -86,7 +86,7 @@ img {
     .instagram {
         width: 18%; /* Use porcentagem para largura, ajuste conforme necessário */
         top: 87%; /* Posição vertical na imagem final (ajuste este valor!) */
-        left: 35%; /* Centraliza horizontalmente */
+        left: 43%; /* Centraliza horizontalmente */
         transform: translateX(-50%); /* Ajuste para centralizar perfeitamente */
     }
 }
@@ -101,7 +101,7 @@ img {
     .agende {
         width: 45%; /* Ajuste a largura para o modo paisagem, ainda em porcentagem */
         top: 65%; /* Posição vertical na imagem final (ajuste este valor!) */
-        left: 35%; /* Centraliza horizontalmente */
+        left: 32%; /* Centraliza horizontalmente */
         transform: translateX(-50%);
         animation: pulse 1.5s infinite;
     }

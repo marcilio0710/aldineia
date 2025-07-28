@@ -77,7 +77,7 @@ img {
     .agende {
         width: 55%; /* Use porcentagem para largura, ajuste conforme necessário */
         top: 62%; /* Posição vertical na imagem final (ajuste este valor!) */
-        left: 25%; /* Centraliza horizontalmente */
+        left: 23%; /* Centraliza horizontalmente */
         transform: translateX(-50%); /* Ajuste para centralizar perfeitamente */
         animation: pulse 1.5s infinite;
     }
@@ -86,7 +86,7 @@ img {
     .instagram {
         width: 18%; /* Use porcentagem para largura, ajuste conforme necessário */
         top: 88%; /* Posição vertical na imagem final (ajuste este valor!) */
-        left: 45%; /* Centraliza horizontalmente */
+        left: 49%; /* Centraliza horizontalmente */
         transform: translateX(-50%); /* Ajuste para centralizar perfeitamente */
     }
 }

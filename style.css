@@ -26,6 +26,7 @@ body {
 /* Estilo para todas as imagens para garantir que ocupem 100% da largura do seu contêiner */
 /* e mantenham sua proporção */
 img {
+    width: 100%;
     max-width: 100%; /* Garante que a imagem nunca ultrapasse a largura do pai */
     height: auto; /* Mantém a proporção da imagem */
     display: block; /* Garante que as imagens se comportem como blocos e não tenham espaço extra */

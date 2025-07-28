@@ -85,8 +85,8 @@ img {
     /* Posição e tamanho para o botão "Instagram" no modo retrato */
     .instagram {
         width: 18%; /* Use porcentagem para largura, ajuste conforme necessário */
-        top: 90%; /* Posição vertical na imagem final (ajuste este valor!) */
-        left: 50%; /* Centraliza horizontalmente */
+        top: 87%; /* Posição vertical na imagem final (ajuste este valor!) */
+        left: 35%; /* Centraliza horizontalmente */
         transform: translateX(-50%); /* Ajuste para centralizar perfeitamente */
     }
 }
@@ -100,8 +100,8 @@ img {
     /* Ajustes para o botão "Agende" no modo PAISAGEM */
     .agende {
         width: 45%; /* Ajuste a largura para o modo paisagem, ainda em porcentagem */
-        top: 75%; /* Posição vertical na imagem final (ajuste este valor!) */
-        left: 50%; /* Centraliza horizontalmente */
+        top: 65%; /* Posição vertical na imagem final (ajuste este valor!) */
+        left: 35%; /* Centraliza horizontalmente */
         transform: translateX(-50%);
         animation: pulse 1.5s infinite;
     }
@@ -109,7 +109,7 @@ img {
     /* Ajustes para o ícone "Instagram" no modo PAISAGEM */
     .instagram {
         width: 12%; /* Ajuste a largura para o modo paisagem, ainda em porcentagem */
-        top: 90%; /* Posição vertical na imagem final (ajuste este valor!) */
+        top: 88%; /* Posição vertical na imagem final (ajuste este valor!) */
         left: 50%; /* Centraliza horizontalmente */
         transform: translateX(-50%);
     }
